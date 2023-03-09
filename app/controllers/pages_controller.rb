@@ -13,4 +13,7 @@ class PagesController < ApplicationController
 
   def program
   end
+  
+  def team
+  end
 end
