@@ -6,6 +6,21 @@
   height: 280px;
   margin: 0 auto;
   margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+
+}
+
+.card-category {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  width: 255px;
+  overflow: hidden;
+  position: relative;
+}
+.card-category img{
+  height: 100%;
+  width: 100%;
 }
 
 // Smallest device
