@@ -1,27 +1,19 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
-  width: 800px;
-  height: 280px;
+  width: 700px;
   margin: 0 auto;
-  margin-bottom: 24px;
-  display: flex;
-  flex-wrap: wrap;
-  place-items: center;
-
+  justify-content: center;
+  grid-gap: 8px;
 }
 
 .card-category {
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
   width: 255px;
-  overflow: hidden;
-  position: relative;
+  height: 255px;
+
 }
-.card-category img{
-  height: 100%;
-  width: 100%;
-}
+
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
