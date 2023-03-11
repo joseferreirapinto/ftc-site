@@ -1,3 +1,37 @@
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
 <div class="container_bg">
-<h1>Contact Page 🚀</h1>
+  <body>
+    <div class="container mt-5">
+      <%= yield %>
+    </div>
+  </body>
+  </html>
+
+  @@contact
+  <h1 class="mb-4">Contact Us</h1>
+  <form method="post" action="/contact">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+
+  @@thank_you
+  <h1 class="mb-4">Thank You</h1>
+  <p>Your message has been sent.</p>
 </div>
